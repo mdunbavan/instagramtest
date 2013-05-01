@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://instacode:8888/';
+$config['base_url']	= 'http://www.markdunbavan.co.uk/instagram/instacode/';
 
 $config['server_root'] = $_SERVER['DOCUMENT_ROOT'];
 
@@ -269,7 +269,7 @@ $config['sess_time_to_update']	= 300;
 */
 $config['cookie_prefix']	= "";
 $config['cookie_domain']	= "";
-$config['cookie_path']		= "http://instacode:8888/";
+$config['cookie_path']		= "http://www.markdunbavan.co.uk/instagram/instacode/";
 $config['cookie_secure']	= FALSE;
 
 /*

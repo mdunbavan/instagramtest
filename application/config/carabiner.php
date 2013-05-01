@@ -60,7 +60,7 @@ $config['style_dir'] = 'assets/css/';
 |
 */
 
-$config['base_uri'] = 'http://instacode:8888/';
+$config['base_uri'] = 'http://www.markdunbavan.co.uk/instagram/instacode/';
 
 /*
 |--------------------------------------------------------------------------
