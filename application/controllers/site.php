@@ -6,26 +6,22 @@ class Site extends CI_Controller {
 	{
 		parent::__construct();
 		
-		// Set the instagram library access token variable
 		$this->instagram_api->access_token = $this->session->userdata('instagram-token');
+		
 	}
-
-	/*
-function index() {
-		$this->load->model('site_model');
-		$data['records'] = $this->site_model->getAll();
-		$this->load->view('home', $data);
-	}
-*/
+	
 	function index() {
+		
+		// Get the user data
 	
 		$this->load->model('data_model');
+		$data['user_data'] = $this->instagram_api->getUser('387');
 		$data['rows'] = $this->data_model->getAll();
-		$data['popular_media'] = $this->instagram_api->getPopularMedia();
-		//$this->load->view('home', $data);
+		$popular_media = $this->instagram_api->getPopularMedia();
 		$data['main_view'] = 'home';
 		$this->load->vars($data);
 		$this->load->view('template');
+		// Loop through the data returned by Instagram
 	}
 
 }

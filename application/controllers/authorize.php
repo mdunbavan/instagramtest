@@ -31,12 +31,12 @@ class Authorize extends CI_Controller {
 			$this->session->set_userdata('instagram-user-id', $auth_response->user->id);
 			$this->session->set_userdata('instagram-full-name', $auth_response->user->full_name);
 			
-			redirect('/');
+			redirect('/site');
 			
 		} else {
 			
 			// There was no GET variable so redirect back to the homepage
-			redirect('/index.php/welcome');
+			redirect('/none');
 			
 		}
 	

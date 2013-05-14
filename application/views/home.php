@@ -1,10 +1,4 @@
-<?php if($this->session->userdata('instagram-token')) { ?>
-	<h1>I am in</h1>
-<?php } else { ?>
-	<h1>I am not in yet</h1>	 
-<?php } ?>
-<h1>My view has been loaded</h1>
-<?php echo anchor($this->instagram_api->instagramLogin(), 'Please login to instagram'); ?>
+<h2><?php echo ucfirst($user_data->data->username); ?> has</h2>
 <section id="main">
 	<div id="container">
 		<?php foreach($rows as $r) : ?>
@@ -16,7 +10,3 @@
 		<?php endforeach ?>
 	</div>
 </section>
-
-
-
-</section> 

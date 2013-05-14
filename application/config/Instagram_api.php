@@ -9,11 +9,11 @@
 |
 */
 
-$config['instagram_client_name']	= 'folkagram';
-$config['instagram_client_id']		= 'b40ecbefe74a43578b216c251ff9a898';
-$config['instagram_client_secret']	= 'a2111c19ca0d440d8b7e078fd407c54f';
-$config['instagram_callback_url']	= 'http://www.markdunbavan.co.uk/instagram/instacode/';
-$config['instagram_website']		= 'http://www.markdunbavan.co.uk/instagram/instacode/';
+$config['instagram_client_name']	= 'Website images';
+$config['instagram_client_id']		= 'a17f6583b9354218994357f7fb7c0534';
+$config['instagram_client_secret']	= '47d276947187422e9f77b66d8068c069';
+$config['instagram_callback_url']	= 'http://instacode:8888/index.php/authorize/get_code';
+$config['instagram_website']		= 'http://instacode:8888/';
 $config['instagram_description']	= 'Instagram like app and comment app for folk clothing';
 
 // There was issues with some servers not being able to retrieve the data through https
